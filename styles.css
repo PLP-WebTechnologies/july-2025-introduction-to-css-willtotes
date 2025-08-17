@@ -1,0 +1,152 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5fa;
+    color: #333;
+}
+
+header{
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p{
+    margin: 10px 0;
+    font-style: italic;
+}
+
+header img{
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+main{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section{
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(222, 116, 11, 0.723);
+}
+
+h2{
+    color: #8b4513;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 5px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    background: #f9f9f9;
+    margin: 8px 0;
+    padding: 10px;
+    border-left: 4px solid #8b4513;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, th{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    background-color: #8b4513;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+figure{
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+figure img{
+    border-radius: 8px;
+}
+
+fieldset{
+    margin: 15px 0;
+    padding: 15px;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+}
+
+legend{
+    background: #8b4513;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+label{
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    background-color: #8b4513;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px 0 0;
+    width: auto;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #654321;
+
+}
+
+input[type="reset"] {
+    background-color: #666;
+}
+
+input[type="reset"]:hover {
+    background-color: #555;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

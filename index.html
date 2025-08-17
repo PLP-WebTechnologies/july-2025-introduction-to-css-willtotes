@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>week 3 Assignment</title>
+</head>
+<body>
+    <header>
+        <h1>Will's Coffee Shop</h1>
+        <p>Daily Dose of Happiness in a Cup</p>
+        <img width="400"  src="images/banner.png" alt="Coffee Shop Banner">
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Best Selling Brews</h2>
+            <ul>
+                <li>Rich espresso from organic beans</li>
+                <li>Creamy cocoa topped cappuccino</li>
+                <li>Iced vanilla latte</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Menu & Prices</h2>
+            <table border="1" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Beverage</th>
+                        <th>Size</th>
+                        <th>Price (Rands)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>Small</td>
+                        <td>R15.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Medium</td>
+                        <td>R20.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Medium</td>
+                        <td>R25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Large</td>
+                        <td>R29.50</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>Small</td>
+                        <td>R21.50</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>Medium</td>
+                        <td>R25.50</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>Large</td>
+                        <td>R30.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Enjoy the Cafe Feels</h2>
+            <figure>
+                <img width="400" src="images/istockphoto-1028658748-612x612.jpg" alt="Cup of Latte"">
+                <figcaption>Our Exclusive Signature latte</figcaption>
+                <audio controls autoplay loop>
+                    <source src="audio/05 - Put The Radio On - (Musicfire.in).mp3"
+                </audio>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="John Doe" minlength="3" required><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="your@example.com" required autocomplete="email"><br><br>
+
+                    <label for="phone">Phone Number:</label> 
+                    <input type="tel" id="phone" name="phone"  placeholder="0812224444" pattern="[0-9]{10}" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Coffee Selection</legend>
+                    <label for="coffeeType">Choose Your Coffee:</label>
+                    <select id="coffeeType" name="coffeeType" required>
+                        <option value="">--- Select ---</option>
+                        <option value="espresso">Espresso</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="latte">Latte</option>
+                    </select>
+                    <br>
+                    <br>
+                    
+                    <label>Size:</label>
+                    
+                    <label for="small">Small</label>
+                    <input type="radio" id="small" name="size" value="small" required>
+                    
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="medium" name="size" value="medium">
+
+                    <label for="large">Large</label>
+                    <input type="radio" id="large" name="size" value="large">
+
+                    <br>
+                <br>
+
+                <label for="extras">Extras:</label>
+
+                <label for="whippedCream">Whipped Cream</label>
+                <input type="checkbox" id="whippedCream" name="extras" value="whippedCream">
+
+                <label for="extraShot">Extra Espresso Short</label>
+                <input type="checkbox" id="extraShot" name="extras" value="extraShot">
+
+                <label for="icedCoffee">Iced Coffee</label>
+                <input type="checkbox" id="icedCoffee" name="extras" value="icedCoffee">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Pickup Details</legend>
+                    <label for="pickupDate">Pickup Date:</label>
+                    <input type="date" id="pickupDate" name="pickupDate" required>
+                    <br>
+                    <br>
+
+                    <label for="instructions">Special Instructions</label><br>
+                    <textarea id="instructions" name="instructions" placeholder="E.g. No sugar, extra hot, no milk, etc."></textarea>
+
+                    <label for="totalPrice">Total Price (Rands)</label>
+                    <input type="text" id="totalPrice" name="totalPrice" value="R15.50" readonly>
+                    
+                </fieldset>
+
+                <input type="submit" value="Submit Order">
+                <input type="reset" value="Reset Form">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Will's Coffee Shop | Daily Dose of Happiness in a Cup</p>
+    </footer>
+</body>
+</html>
